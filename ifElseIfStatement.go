@@ -8,7 +8,11 @@ import (
 func evaluateValue(value int64) string {
 	replyMessage := ""
 	//insert your code here
-
+	if value%5 == 0 && value%6 == 0 {
+		replyMessage = "yes it is divisible by 5 & 6"
+	} else {
+		replyMessage = "No it is not divisible by 5 & 6"
+	}
 	//Do not remove these lines
 	fmt.Println((replyMessage))
 	return replyMessage
